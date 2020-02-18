@@ -1321,7 +1321,7 @@
     <!-- Footer -->
     <footer class="py-5">
         <div class="container">
-            <div class="medium  text-center text-light">Copyright &copy; <?php echo date("Y"); ?> - Propremium</div>
+            <div class="medium  text-center text-white">Copyright &copy; <?php echo date("Y"); ?> - Propremium</div>
         </div>
     </footer>
 
