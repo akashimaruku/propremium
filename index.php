@@ -22,9 +22,9 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS - Includes Bootstrap -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
-    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+      <link href="css/creative2.css" rel="stylesheet"> <!--creative.css overwritten-->
+    <link href="css/animate.min.css" rel="stylesheet"> <!--css for animation-->
 
 
 
@@ -47,7 +47,9 @@
     }
 
     .carousel-control-next-icon,
-    .carousel-control-prev-icon {}
+    .carousel-control-prev-icon {
+
+    }
 
     .carousel-indicators {
         bottom: 0;
@@ -128,8 +130,9 @@
 
 
     .carousel-item>img {
+      
         width: 50px;
-        height: 400px;
+        height: 700px;
     }
 
     footer {
@@ -192,21 +195,24 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
                 <br>
                 <br>
                 <br>
                 <br>
-
+                <br>
+                <br>
+                <br>
                 <div class="carousel-inner skyblue">
                     <!-- first slide -->
                     <div class="carousel-item active">
                         <!--img class="d-block w-100" src="img/propremium_brands.png" alt="First slide"-->
                         <div class="carousel-caption d-md-block">
                             <img class="d-block w-100" data-animation="animated bounceInUp"
-                                src="img/propremium_brands - Copy.png" alt="First slide">
+                                style="width:50px; height:270px;" src="img/coverpage.png" alt="First slide">
                             <h3 class="text-dark" data-animation="animated bounceInLeft">
-                                a variety of trusted brands
+
                             </h3>
 
                         </div>
@@ -216,22 +222,34 @@
                     <div class="carousel-item skyblue img-fluid">
                         <!--img class="d-block w-100" src="img/cover brands.png" alt="Second slide"-->
                         <div class="carousel-caption d-md-block">
-                            <img class="d-block w-100" data-animation="animated bounceInUp" src="img/brandcover.jpg"
-                                alt="First slide">
-                            <h3 class="text-dark" data-animation="animated bounceInUp">
-                                for your wide choices
+                            <img class="d-block w-100" data-animation="animated bounceInUp"
+                                style="width:50px; height:250px;" src="img/coverpage2.png" alt="Second slide">
+                            <h3 class="text-dark" data-animation="animated bounceInLeft">
+                                A variety of trusted brands
                             </h3>
-
                         </div>
                     </div>
 
                     <!-- third slide -->
+                    <div class="carousel-item skyblue img-fluid">
+                        <!--img class="d-block w-100" src="img/cover brands.png" alt="Second slide"-->
+                        <div class="carousel-caption d-md-block">
+                            <img class="d-block w-100" data-animation="animated bounceInUp"
+                                style="width:50px; height:250px;" src="img/coverpage3.png" alt="Third slide">
+                            <h3 class="text-dark" data-animation="animated bounceInLeft">
+                                For your wide choices
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- third slide -->
                     <div class="carousel-item skyblue">
                         <!--img class="d-block w-100" src="img/mella1.jpg" alt="Third slide"-->
                         <div class="carousel-caption d-md-block">
-                            <h3 class="text-dark" data-animation="animated flipInX">
-                                to cater your kitchen equipment needs
-                            </h3>
+
+                            <img class="d-block w-100" data-animation="animated fadeInDown"
+                                style="width:50px; height:250px;" src="img/coverpage4.png" alt="Fourth slide">
+                            <!--h3 class="text-dark" data-animation="animated flipInX">  
+                            </h3-->
                             <a href="#brand">
                                 <button class="btn btn-lg" style="color:black;" href="#brand"
                                     data-animation="animated fadeIn">find out
@@ -444,7 +462,7 @@
                                 <td><?php echo $row['brand_name']; ?></td>
                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                 <td><img src="brands/ELECTROLUX/<?php echo $row['image'];?>" class="img-responsive"
-                                        style="width:145px; height:160px;"> </td>
+                                        style="width:195px; height:160px;"> </td>
                             </tr>
                         </table>
                         <?php
@@ -576,7 +594,7 @@
                                 <td><?php echo $row['brand_name']; ?></td>
                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                 <td><img src="brands/HOBART/<?php echo $row['image'];?>" class="img-responsive"
-                                        style="width:145px; height:160px;"> </td>
+                                        style="width:155px; height:160px;"> </td>
                             </tr>
                         </table>
                         <?php
@@ -747,7 +765,7 @@
                                         style="width:145px; height:160px;"> </td>
                             </tr>
                         </table>
-                        <?php
+                    <?php
                 }
                    ?>
                     </div>
@@ -1024,7 +1042,7 @@
                                 <td><?php echo $row['brand_name']; ?></td>
                                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                                 <td><img src="brands/WINTERHALTER/<?php echo $row['image'];?>" class="img-responsive"
-                                        style="width:145px; height:160px;"> </td>
+                                        style="width:165px; height:160px;"> </td>
                             </tr>
                         </table>
                         <?php
@@ -1455,7 +1473,6 @@
                 doAnimations($animatingElems);
             });
         })(jQuery);
-
 
 
     });

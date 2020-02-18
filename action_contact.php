@@ -30,8 +30,8 @@
 
     <?php
    
-    if (  isset( $_POST['submit'] )  )
-  {
+if (isset($_POST['submit'])){
+
  include_once("db.php");
 $name = $_POST['name'];
 $email = $_POST['email'];
