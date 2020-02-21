@@ -27,7 +27,14 @@
     <link href="css/animate.min.css" rel="stylesheet">
 
 <body>
-
+<?php
+$to = 'akashimaruku@gmail.com';
+$subject = 'Test email'; 
+$message = "Hello World!\n\nThis is my first mail."; 
+$headers = "From: * maruku43@gmail.com\r\nReply-To: akashimaruku@gmail.com";
+$mail_sent = mail( $to, $subject, $message, $headers );
+echo $mail_sent ? "Mail sent" : "Mail failed";
+?>
     <?php
    
 if (isset($_POST['submit'])){
@@ -35,12 +42,7 @@ if (isset($_POST['submit'])){
  include_once("db.php");
 $name = $_POST['name'];
 $email = $_POST['email'];
-$subject= $_POST['subject'];
-$message = $_POST['msg'];
 
-$mailTo = "maruku43@gmail.com";
-$headers = "From: ".$email;
-$txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
 mail($mailTo, $subject, $txt, $headers);
 
